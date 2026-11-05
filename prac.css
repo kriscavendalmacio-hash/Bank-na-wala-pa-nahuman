@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.home-container {
+    width: 100%;
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
+}
+
+/* Navigation Bar */
+.home-boxed1 {
+    background: linear-gradient(180deg, #10203D, #0D1B33);
+    padding: clamp(10px, 3vw, 20px);
+}
+
+/* Logo Bank */
+.fa-building-columns {
+    font-size: 2rem;
+    color: white;
+}
+
+.nexuz {
+    font-size: 1.2rem;
+    margin-left: clamp(8px, 2vw, 16px);
+    color: rgba(255,255,255);
+    font-weight: bold;
+}
+.safe {
+    font-size: 0.70rem;
+    display: block;
+    margin-left: clamp(8px, 2vw, 16px);
+    color: rgba(208,208,208);
+}
+
+/* Logo House */
+.home {
+    width: 100%;
+    height: auto;
+    margin-top: clamp(15px, 4vw, 30px);
+    display: flex;
+    flex-direction: row;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: clamp(5px, 2vw, 10px);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.fa-house {
+    font-size: 0.85rem;
+    color: rgba(208,208,208);
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.home p {
+    margin-left: clamp(8px, 2vw, 16px);
+    font-size: 0.85rem;
+    color: rgba(208,208,208);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.home:hover {
+    background-color: #234575;
+}
+
+.home:hover .fa-house,
+.home:hover p {
+   color: white;
+}
+
+/* Logo Transaction */
+.transaction {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: clamp(5px, 2vw, 10px);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.fa-arrow-right-arrow-left {
+    font-size: 0.85rem;
+    color: rgba(208,208,208);
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.transaction p {
+    margin-left: clamp(8px, 2vw, 16px);
+    font-size: 0.85rem;
+    color: rgba(208,208,208);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.transaction:hover {
+    background-color: #234575;
+}
+
+.transaction:hover .fa-arrow-right-arrow-left,
+.transaction:hover p {
+   color: white;
+}
+
+/* Logo Transfer */
+.transfer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: clamp(5px, 2vw, 10px);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.fa-paper-plane {
+    font-size: 0.85rem;
+    color: rgba(208,208,208);
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.transfer p {
+    margin-left: clamp(8px, 2vw, 16px);
+    font-size: 0.85rem;
+    color: rgba(208,208,208);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.transfer:hover {
+    background-color: #234575;
+}
+
+.transfer:hover .fa-paper-plane,
+.transfer:hover p {
+   color: white;
+}
+
+/* Logo Settings*/
+.settings {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: clamp(5px, 2vw, 10px);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.fa-gear {
+    font-size: 0.85rem;
+    color: rgba(208,208,208);
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.settings p {
+    margin-left: clamp(8px, 2vw, 16px);
+    font-size: 0.85rem;
+    color: rgba(208,208,208);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.settings:hover {
+    background-color: #234575;
+}
+
+.settings:hover .fa-gear,
+.settings:hover p {
+   color: white;
+}
+
+
+
+/* Home Content */
+.home-boxed2 {
+    background-color: #F4F7FC;
+    padding: clamp(10px, 3vw, 20px);
+}
+
+/* First Div */
+.welcome-back {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.welcome-text {
+    font-size: 0.95rem;
+}
+.welcome-overview {
+    font-size: 0.80rem;
+    margin-top: 5px;
+}
+
+
+.welcome-boxed2 {
+    display: flex;
+    justify-content: end;
+}
+.logo-boxed {
+    width: 40%;
+    height: 40%;
+    padding: clamp(5px, 2vw, 10px);
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-boxed span {
+    font-size: 0.85rem;
+    margin-left: clamp(5px, 2vw, 10px);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.logo-boxed:hover {
+    transform: scale(1.01);
+}
+
+.fa-user {
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+}
+
+
+/* Balance Boxed */
+.balance-boxed {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #10203D, #0D1B33);
+    border-radius: 10px;
+    padding: clamp(10px, 3vw, 20px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.balance-boxed1 {
+    padding: clamp(10px, 3vw, 20px);
+}
+.balance-boxed1 h4 {
+    color: rgba(208,208,208);   
+}
+.balance-boxed1 h1 {
+    margin-top: 5px;
+    color: white;
+}
+.balance-boxed1 span {
+    color: rgba(208,208,208);
+    font-size: 0.75rem;
+}
+.fa-id-card {
+    color: rgba(208,208,208);
+    font-size: 0.75rem;
+    margin-top: clamp(10px, 3vw, 20px);
+}
+
+.balance-boxed2 {
+    padding: clamp(10px, 3vw, 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.balance-boxed22 {
+    width: 25%;
+    height: 100%;
+}
+
+.goals,.priority {
+    font-size: 0.75rem;
+    color: white;
+}
+
+.manage {
+    font-size: 0.70rem;
+    color: rgba(208,208,208);
+    margin-top: 5px;
+}
+
+
+/* Deposit Withdraw Boxed */
+.deposit-withdraw-boxed {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: clamp(10px, 3vw, 20px);
+    padding-left: 0;
+    padding-right: 0;
+    gap: clamp(10px, 3vw, 20px);
+}
+
+.deposit-boxed {
+    background-color: #4CAF5033;
+    padding: clamp(10px, 3vw, 20px);
+    border-radius: 5px;
+}
+
+.arrow {
+    width: 60px;
+    height: 60px;
+    background-color: #98FB98;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 360px;
+}
+.arrow p {
+    color: green;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dp-boxed {
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+}
+.dp-boxed span {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.dp-boxed p {
+    font-size: 0.75rem;
+}
+
+.deposit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.85rem;
+    margin-top: clamp(10px, 3vw, 20px);
+    background-color:#41ab5d;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.deposit:hover {
+    transform: scale(1.01);
+    background-color: #238b45;
+}
+
+
+.withdraw-boxed {
+    padding: clamp(10px, 3vw, 20px);
+    border-radius: 5px;
+    background-color: #f9bfbf;
+}
+
+.arroww {
+    width: 60px;
+    height: 60px;
+    background-color: #ff8282;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 360px;
+}
+.arroww p {
+    color:#ff0000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.withdraw {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.85rem;
+    margin-top: clamp(10px, 3vw, 20px);
+    background-color:#ff0000;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.withdraw:hover {
+    transform: scale(1.01);
+    background-color: #ff3535;
+}
+
+
+/* ================ Queries ================== */
+@media(min-width: 430px) and (max-width: 520px) {
+    .home-container {
+        grid-template-columns: 1fr;
+    }
+    .welcome-back {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-boxed2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-boxed {
+        width: auto;
+        height: auto;
+    }
+
+    .home-boxed1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .welcome-text, .welcome-overview {
+        text-align: center;
+    }
+
+    .balance-boxed22 {
+        flex-direction: column;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .manage {
+        text-align: center;
+    }
+}
+
+
+@media(min-width: 300px) and (max-width: 430px) {
+    .home-container {
+        grid-template-columns: 1fr;
+    }
+    .welcome-back {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-boxed2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-boxed {
+        width: auto;
+        height: auto;
+    }
+
+    .home-boxed1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .welcome-text, .welcome-overview {
+        text-align: center;
+    }
+
+    .balance-boxed22 {
+        flex-direction: column;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .manage {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.inventory-boxed {
+    width: 100%;
+    height: auto;
+    padding: clamp(10px, 3vw, 20px);
+    background-color: rgba(236,236,236);
+    margin-top: clamp(10px, 3vw, 20px);
+}
+.trans-boxed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.view-all {
+    padding: 5px;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    color: #10203D;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.view-all:hover {
+    transform: scale(1.01);
+}
+
+.inventory {
+    width: 100%;
+    height: auto;
+  background-color: rgba(246,246,246);
+    padding: clamp(5px, 2vw, 10px);
+    display: flex;
+    gap: clamp(10px, 3vw, 20px);
+    flex-direction: column;
+    margin-top: clamp(10px, 3vw, 20px);
+    border-radius: 5px;
+}
+.no-transactions {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.js-transaction-boxed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.el-amount {
+    color: #238b45;
+    margin-left: clamp(10px, 3vw, 20px);
+}
+
+.js-transaction-boxedd {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ell-amount {
+    color:#ff0000;
+    margin-left: clamp(10px, 3vw, 20px);
+}
+
+
+
+
+.deposit-container {
+    width: 100%;
+    height: 85%;
+    display: none;
+    padding: clamp(10px, 3vw, 20px);
+}
+
+.dc-boxed {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding: clamp(10px, 3vw, 20px);
+    background-color: rgba(255,255,255,0.35);
+}
+
+#back-deposit {
+    padding: 5px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+#back-deposit:hover {
+    transform: scale(1.03);
+}
+
+.dc-boxed input {
+    display: block;
+    margin: auto;
+    margin-top: clamp(10px, 3vw, 20px);
+    padding: clamp(5px, 2vw, 10px);
+    width: 80%;
+}
+
+.dc-boxed input::placeholder {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#depo {
+    width: 80%;
+    margin: auto;
+    padding: clamp(5px, 2vw, 10px);
+    display: block;
+    margin-top: clamp(10px, 3vw, 20px);
+    cursor: pointer;
+    border: none;
+    background-color:#41ab5d;
+    transition: transform 0.2s ease;
+}
+
+#depo:hover {
+    transform: scale(1.01);
+    background-color: #238b45;
+}
+
+
+.withdraw-container {
+    width: 100%;
+    height: 85%;
+    display: none;
+    padding: clamp(10px, 3vw, 20px);
+}
+
+.wc-boxed {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding: clamp(10px, 3vw, 20px);
+    background-color: rgba(255,255,255,0.35);
+}
+
+#back-withdraw {
+    padding: 5px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+#back-withdraw:hover {
+    transform: scale(1.03);
+}
+
+.wc-boxed input {
+    display: block;
+    margin: auto;
+    margin-top: clamp(10px, 3vw, 20px);
+    padding: clamp(5px, 2vw, 10px);
+    width: 80%;
+}
+
+.wc-boxed input::placeholder {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#depoo {
+    width: 80%;
+    margin: auto;
+    padding: clamp(5px, 2vw, 10px);
+    display: block;
+    margin-top: clamp(10px, 3vw, 20px);
+    cursor: pointer;
+    border: none;
+    background-color:#ff0000;
+    transition: transform 0.2s ease;
+}
+
+#depoo:hover {
+    transform: scale(1.01);
+    background-color: #ff3535;
+}
