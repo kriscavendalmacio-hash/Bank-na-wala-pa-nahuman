@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="prac.css">
+    <title>Bank Account</title>
+</head>
+<body>
+    
+    <!-- Home -->
+    <div class="home-container">
+
+        <!-- Navigation Bar Logo Bank -->
+        <div class="home-boxed1">
+            <div style="display: inline-block;"><i class="fa-solid fa-building-columns"></i></div>
+            <div style="display: inline-block;"> <span class="nexuz">Nexuz Bank</span> <span class="safe">Safe Simple, Secure</span> </div>
+            
+            <!-- Logo Home -->
+             <div>
+            <div class="home">
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+            </div>
+
+            <!-- Transaction -->
+            <div class="transaction">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <p>Transaction</p>
+            </div>
+
+            <!-- Transfer -->
+            <div class="transfer">
+                <i class="fa-solid fa-paper-plane"></i>
+                <p>Transfer</p>
+            </div>
+
+            <!-- Settings-->
+            <div class="settings">
+                <i class="fa-solid fa-gear"></i>
+                <p>Settings</p>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="home-boxed2">
+            <div class="welcome-back">
+                <div class="welcome-boxed1">
+                    <p class="welcome-text">Welcome Back, <strong>Kris Caven L. Dalmacio</strong></p>
+                    <p class="welcome-overview">Here's your account overview</p>
+                </div>
+
+                <div class="welcome-boxed2">
+                    <div class="logo-boxed">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Kris Caven L. Dalmacio ↓</span>
+                </div>
+            </div> 
+        </div>
+
+        <div class="balance-boxed">
+            <div class="balance-boxed1">
+                <h4>Available Balance</h4>
+                <h1 class="balance-b" data-balance="25000">₱ 25,000.00</h1>
+                <i class="fa-solid fa-id-card"></i>
+                <span>Account No. ****4821</span>
+            </div>
+            <div class="balance-boxed2">
+                <div class="balance-boxed22">
+                    <p class="goals">Your Goals</p>
+                    <p class="priority">Our Priority</p>
+                    <p class="manage">Manage your money with confidents</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deposit Withdraw Boxed -->
+         <div class="deposit-withdraw-boxed">
+
+            <div class="deposit-boxed">
+                <div style="display: inline-block;">
+                    <div class="arrow" data-arrow="↓"><p>↓</p></div>
+                </div>
+                <div class="dp-boxed">
+                    <span>Deposit</span>
+                    <p>Add money to your account</p>
+                </div>
+
+                <button class="deposit">Deposit</button>
+            </div>
+
+            <div class="withdraw-boxed">
+                <div style="display: inline-block;">
+                    <div class="arroww" data-arroww="↗"><p>↗</p></div>
+                </div>
+                <div class="dp-boxed">
+                    <span>Withdraw</span>
+                    <p>Take money to your account</p>
+                </div>
+
+                <button class="withdraw">Withdraw</button>
+            </div>
+         </div>
+
+
+        <!--  Deposit Boxed -->
+        <div class="deposit-container">
+            <h3>Deposit</h3>
+            <div class="dc-boxed">
+                <button id="back-deposit">Back</button>
+                <input type="number" id="amount" placeholder="Amount">
+                <button id="depo">Deposit</button>
+            </div>
+        </div>
+
+        <!--  Withdraw Boxed -->
+        <div class="withdraw-container">
+            <h3>Withdraw</h3>
+            <div class="wc-boxed">
+                <button id="back-withdraw">Back</button>
+                <input type="number" id="amounted" placeholder="Amount">
+                <button id="depoo">Withdraw</button>
+            </div>
+        </div>
+
+         <!-- Inventory Boxed -->
+          <div class="inventory-boxed">
+            <div class="trans-boxed">
+                <h3>Recent Transaction</h3>
+                <button class="view-all">View All ⟶</button>
+            </div>
+
+            <div class="no-transactions"><h3></h3></div>
+            <div class="inventory">
+
+            </div>
+          </div>
+    </div>
+    </div>
+
+</body>
+<script src="prac.js"></script>
+</html>
